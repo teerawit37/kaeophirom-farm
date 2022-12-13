@@ -1,7 +1,8 @@
 export const en = {
     head: {
         main: 'Kaeophirom Farm',
-        sub: 'A Closed-system Mealworms Farm in Thailand'
+        sub: 'A Closed-system Mealworms Farm in Thailand',
+        meta: 'Kaeopirom Farm The farm raises live mealworms, dehydrates them for use as bird food, squirrel food, and sugar glider food.'
     },
     hero: {
         greeting: 'Kaeophirom Farm',
@@ -35,7 +36,8 @@ export const en = {
 export const th = {
     head: {
         main: 'แก้วภิรมย์ ฟาร์ม',
-        sub: 'ฟาร์มเลี้ยง,จำหน่าย,แปรรูปหนอนนกระบบปิดในประเทศไทย '
+        sub: 'ฟาร์มเลี้ยง,จำหน่าย,แปรรูปหนอนนกระบบปิดในประเทศไทย',
+        meta: 'แก้วภิรมย์ ฟาร์ม ฟาร์มเลี้ยงหนอนนกเป็น, อบแห้งเป็นสำหรับใช้เป็น อาหารนก, อาหารกระรอก, อหารชูการ์ไกลเดอร์'
     },
     hero: {
         greeting: 'แก้วภิรมย์ ฟาร์ม',
