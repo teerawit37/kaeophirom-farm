@@ -16,7 +16,7 @@ const ContactUsSection = () => {
                                 {t.contactus.email}: <a className="wth-contact-us__link" href="mailto:contact@wormth.com">contact@wormth.com</a>
                             </div>
                             <div className="wth-contact-us__label">
-                                {t.contactus.phone}: <a className="wth-contact-us__link" href="tel:+66924298797">(+66) 092-4298797</a>
+                                {t.contactus.phone}: <a className="wth-contact-us__link" href="tel:+66937900962">(+66) 093-7900962</a>
                             </div>
                         </div>
                     </div>
