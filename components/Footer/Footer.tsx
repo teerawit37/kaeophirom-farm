@@ -23,7 +23,7 @@ const Footer = () => {
                         width={100}
                         height={91}
                     />
-                    <div className="wth-footer__menu-container">\
+                    <div className="wth-footer__menu-container">
                         <Link href="/#product">
                             <div className="wth-footer__menu-item">{t.menu.product}</div>
                         </Link>
