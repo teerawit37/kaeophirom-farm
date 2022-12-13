@@ -1,0 +1,84 @@
+@include block('hero-banner') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    background-image: url("../../../public/images/background/bg-1.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+
+    @include element('container') {
+        backdrop-filter: blur(5px);
+    }
+    @include element('heading') {
+        font-size: 42px;
+        font-weight: 900;
+        text-align: center;
+        // backdrop-filter: blur(5px);
+        padding: 4px 8px;
+        color: $--color-pearly-white-100;
+    }
+    @include element('sub-heading') {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        // backdrop-filter: blur(5px);
+        padding: 4px 8px;
+        color: $--color-pearly-white-100;
+    }
+    @include media-breakpoint-up('md') {
+        border-bottom-left-radius: 50% 20%;
+        border-bottom-right-radius: 50% 20%;
+    }
+}
+
+@include block('card-banner') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // height: 350px;
+    width: 100%;
+    margin-bottom: 16px;
+    // background-color: $--color-primary-3;
+    overflow: hidden;
+    border-radius: $--border-radius-1;
+
+    @include element('heading') {
+        position: absolute;
+        font-size: 32px;
+        font-weight: 900;
+        backdrop-filter: blur(5px);
+        color: $--color-pearly-white-100;
+    }
+
+    @include element('img') {
+        object-fit: cover;
+        width: 100% !important;
+        position: relative !important;
+        height: unset 
+    }
+
+    @include element('img-container') {
+        width: 100%;
+        height: 100%;
+        filter: blur(0px);
+        &:hover {
+            filter: blur(2px);
+        }
+    }
+
+    @include media-breakpoint-up('md') {
+        margin-bottom: 0px;
+    }
+
+    // @include media-breakpoint-up('lg') {
+    //     height: 400px;
+    // }
+}

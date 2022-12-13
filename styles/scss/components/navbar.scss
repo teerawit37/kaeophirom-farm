@@ -1,0 +1,61 @@
+@include block('navbar') {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+
+    @include media-breakpoint-up('md') {
+        justify-content: space-between;
+    }
+
+    @include element('logo') {
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        width: fit-content;
+        padding: 16px 32px;
+        height: 100%;
+    }
+
+    @include element('menu-container') {
+        display: none;
+
+        @include media-breakpoint-up('md') {
+            display: flex;
+            flex: 1;
+            justify-content: flex-start;
+            font-weight: 500;
+        }
+
+        @include modifier('last') {
+            @include media-breakpoint-up('md') {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    @include element('logo-container') {
+        display: flex;
+        flex: 0;
+        justify-content: center;
+        height: 100%;
+    }
+
+    @include element('menu-item') {
+        font-size: 16px;
+        color: $--color-pearly-white-600;
+        padding: 0 8px;
+        cursor: pointer;
+
+        &:hover {
+            color: $--color-primary-3;
+        }
+        @include media-breakpoint-up('md') {
+            font-size: 14px;
+        }
+        @include media-breakpoint-up('lg') {
+            font-size: 16px;
+        }
+    }
+}
